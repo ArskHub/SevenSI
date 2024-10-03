@@ -198,18 +198,13 @@ h3 {
   /* Menambahkan jarak di bawah judul layanan */
 }
 
+/* Gaya untuk courses-section */
+
 .courses-section h2 {
-  font-weight: bold;
-  /* Membuat judul layanan menjadi tebal */
-  text-align: center;
-  /* Mengatur posisi judul agar berada di tengah */
   color: #073790;
   /* Mengatur warna biru gelap untuk judul */
-  margin-bottom: 40px;
-  /* Menambahkan jarak di bawah judul layanan */
 }
 
-/* Gaya untuk courses-section */
 
 .courses-section {
   margin-bottom: 10rem;
