@@ -1,471 +1,247 @@
-/* Global Style */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif ;
-}
-
-body {
-    background-color: #f9f9f9;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: #1E3A8A;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.logo img {
-    width: 80px;
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.btn-container {
-    display: inline-block;
-}
-
-.btn-member {
-    background-color: white;
-    color: #1E3A8A;
-    padding: 10px 20px;
-    border-radius: 8px;
-    margin-right: -15px;
-    text-decoration: none;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-}
-
-.btn-member1 {
-    background-color: transparent;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    border: 1px solid white;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-}
-
-/* .btn-member:hover {
-    background-color: #1093dc;
-} */
-
-/* Hero Section */
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    background-color: white;
-    margin: 50px 0;
-}
-
-.hero-text {
-    max-width: 600px;
-}
-
-.hero-text h1 {
-    color: #1E3A8A;
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.hero-text p {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 20px;
-    line-height: 1.6;
-    text-align: justify;
-}
-
-.hero-text h3 {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: #1E3A8A;
-}
-
-.button-group {
-    display: flex;
-}
-
-.button-group .btn {
-    background-color: #1E3A8A;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-.button-group .btn:hover {
-    background-color: #1E3A8A;
-}
-
-/* Hero Image */
-.hero-image img {
-    max-width: 400px;
-    border-radius: 10px;
-}
-
-.container {
-    display: flex;
-    width: 100%;
-    height: 550px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 25px;
-   
-}
-
-.login-box {
-    display: flex;
-    width: 100%;
-}
-
-.login-form {
-    width: 50%;
-    padding: 40px;
-}
-
-h1 {
-    font-size: 12px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-h2 {
-    font-size: 24px;
-    margin-bottom: 5px;
-    color :#1E3A8A;
-    text-align: center;
-}
-
-p {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-label {
-    display: block;
-    color: #000;
-    margin-bottom: 5px;
-    font-size: 14px;
-}
-
-input[type="email"], input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-.password-container {
-    position: relative;
-}
-
-.forgot-password {
-    display: block;
-    color: #2B7CD3;
-    text-decoration: none;
-    font-size: 12px;
-    margin-bottom: 20px;
-}
-
-.btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #1E3A8A;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 10px;
-}
-
-.BuatAkun {
-    text-align: center;
-    font-size: 12px;
-}
-
-.BuatAkun a {
-    color: #1E3A8A;
-    text-decoration: none;
-}
-
-.social-login {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.social-login p {
-    font-size: 12px;
-}
-
-.social-icons a {
-    margin: 0 8px;
-    display: inline-block;
-}
-
-.social-icons img {
-    width: 30px;
-}
-
-.logo-box {
-    width: 50%;
-    background-color: #1E3A8A;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo-box img {
-    width: 200px;
-}
-/* services */
-.services .card.container {
-    display: flex;
-    justify-content: space-between; 
-    gap: 1rem; 
-    width: 100%;
-    height: 250px;
+    font-family: "Segoe UI", sans-serif;
   }
   
-  .services .card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    width: 250px;
-    height: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0;
-  }
-  
-  .services .card .card-icon {
-    width: 50px;
-    height: auto;
-    margin-bottom: 0.5rem;
-  }
-/* services 2 */
-
   body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
-}
-
-h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: #1E3A8A;
-}
-
-.courses-section {
-    padding: 2rem;
-}
-
-.courses-container {
+    background-color: #f9f9f9;
+  }
+  
+  /* Gaya untuk mengubah navbar */
+  .navbar {
+    background-color: #1e3a8a; /* Warna background navbar */
+    padding: 20px 50px; /* Padding navbar */
+  }
+  
+  /* Gaya untuk mengubah logo */
+  .navbar-brand img {
+    width: 80px; /* Lebar logo */
+  }
+  
+  /* Gaya untuk navmenu */
+  .nav-link {
+    color: white !important; /* Warna teks navmenu */
+    font-weight: bold; /* Teks tebal */
+    margin: 0 15px; /* Jarak antar navmenu yang bisa diubah */
+  }
+  
+  /* Mengatur navmenu agar berada di tengah */
+  .navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Gaya untuk tombol Sign In */
+  .btn-signin {
+      background-color: white;
+      color: #1e3a8a;
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-weight: bold;
+    }
+    
+    /* Gaya untuk tombol Sign Up */
+    .btn-signup {
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-weight: bold;
+    }
+    
+    /* Hover untuk tombol Sign In menggunakan gaya tombol Sign Up */
+    .btn-signin:hover {
+      background-color: #206cbd; /* Warna latar belakang saat hover */
+      color: white; /* Warna teks saat hover */
+    }
+    
+    /* Hover untuk tombol Sign Up menggunakan gaya tombol Sign In */
+    .btn-signup:hover {
+      background-color: #206cbd; /* Warna latar belakang saat hover */
+      color: white; /* Warna teks saat hover */
+      
+    }
+    
+  
+  /* Jarak antara tombol Sign In dan Sign Up */
+  .btn-container {
     display: flex;
-    justify-content: center;
-    gap: 1.5rem; /* Jarak antar card */
-    flex-wrap: wrap;
+    gap: 15px; /* Jarak antara kedua tombol yang bisa diubah */
+  }
+  
+  /* Gaya untuk dropdown menu */
+  .dropdown-menu {
+    background-color: #206cbd; /* Warna background dropdown */
+  }
+  
+  /* Gaya untuk item di dropdown */
+  .dropdown-item {
+    color: white; /* Warna teks di dropdown */
+  }
+  
+  /* Gaya hover untuk item di dropdown */
+  .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Efek hover */
+  }
+  
+  /* Gaya untuk grid container */
+  .grid-container {
+    margin-top: 50px;
+    margin-bottom: 50px; /* Tambahkan margin bawah untuk memberi jarak dengan footer */
+  }
+
+ /* Bagian Hero */
+.hero { 
+    padding: 30px; /* mengatur jarak agar halaman jumbotron ada jarak dengan navbar */
+}
+.hero-text { 
+    margin-right: 20px; /* Menambahkan margin di sebelah kanan teks hero untuk memberikan jarak */
+}
+.hero-image img {
+    border-radius: 10px; /* Menerapkan sudut melengkung pada gambar di bagian hero */
+    max-width: 100%; /* Memastikan gambar mengambil 100% lebar kontainer */
+    height: auto; /* Mempertahankan proporsi gambar */
 }
 
-.course-card {
-    background-color: #fff;
+/* Judul (Heading) */
+h1 { 
+    font-weight: bold; /* Membuat judul utama menjadi tebal */
+    color: #003399; /* Mengatur warna biru untuk judul */
+}
+p { 
+    font-size: 1.1rem; /* Meningkatkan ukuran font sedikit untuk keterbacaan */
+    color: #5a5a5a; /* Mengatur warna abu-abu medium untuk paragraf */
+}
+
+/* Pengaturan Kartu Layanan (Service Card) */
+.service-card { 
+    border: 1px solid #e0e0e0; /* Menambahkan batasan yang ringan di sekitar kartu layanan */
+    border-radius: 10px; /* Membulatkan sudut-sudut kartu */
+    padding: 20px; /* Menambahkan padding di dalam kartu */
+    transition: transform 0.3s ease; /* Efek transisi saat hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan halus pada kartu */
+}
+
+/* Efek Hover pada Kartu Layanan */
+.service-card:hover { 
+    transform: translateY(-10px); /* Menggerakkan kartu sedikit ke atas saat hover */
+}
+
+/* Pengaturan Ikon di Kartu Layanan */
+.service-icon { 
+    width: 70px; /* Mengatur ukuran ikon layanan agar seragam */
+    margin-bottom: 15px; /* Menambahkan jarak di bawah ikon */
+}
+
+/* Judul untuk Bagian Layanan */
+h3 { 
+    color: #073790; /* Mengatur warna biru gelap untuk judul layanan */
+    font-weight: bold; /* Membuat judul layanan menjadi tebal */
+}
+
+p { 
+    color: #555; /* Mengatur warna abu-abu untuk teks paragraf */
+}
+
+/* Bagian Layanan (Services) */
+.services { 
+    padding-top: 40px; /* Menambahkan padding di bagian atas section layanan */
+    padding-bottom: 40px; /* Menambahkan padding di bagian bawah section layanan */
+}
+
+.services h2 { 
+    font-weight: bold; /* Membuat judul layanan menjadi tebal */
+    text-align: center; /* Mengatur posisi judul agar berada di tengah */
+    color: #073790; /* Mengatur warna biru gelap untuk judul */
+    margin-bottom: 40px; /* Menambahkan jarak di bawah judul layanan */
+}
+
+.text-center {
+    color: #1e3a8a; /* Ubah warna sesuai dengan card title */
+    font-weight: bold; /* Font weight bold */
+    margin-bottom: 30px; /* Jarak bawah dari judul */
+  }
+  /* Gaya untuk card title */
+  .card-title {
+    color: #1e3a8a; /* Ubah warna judul */
+    font-weight: bold; /* Tebalkan font untuk judul */
+    height: 3rem; /* Tinggi judul tetap agar button tidak bergeser */
+    overflow: hidden; /* Potong teks jika melebihi batas */
+  }
+  
+  /* Gaya untuk button di tengah */
+  .btn-course {
+    display: block;
+    margin: 0 auto;
+    background-color: #1e3a8a;
+    color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 250px;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.course-image {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-}
-
-.course-content {
-    padding: 1rem;
-}
-
-.course-content h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    color: #1E3A8A;
-}
-
-.course-content p {
-    font-size: 0.9rem;
-    color: #7f8c8d;
-}
-
-.course-description {
-    margin-bottom: 1rem;
-}
-
-.rating-price {
+    padding: 10px 20px;
+    text-align: center; /* Posisikan teks di tengah */
+    text-decoration: none;
+  }
+  
+  /* Hover pada tombol beli */
+  .btn-course:hover {
+    background-color: #2549a9;
+    cursor: pointer;
+  }
+  
+  /* Gaya untuk card body dengan tinggi yang seragam */
+  .card {
+    height: 100%; /* Pastikan tinggi card seragam */
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Agar button tetap di bawah */
+  }
+  
+  /* Gaya untuk rating bintang */
+  .star-rating {
+    color: #ffd700;
+  }
+  
+  /* Gaya untuk rating angka*/
+  .rating-number {
+    font-weight: bold;
+    color: #4a5568; /* Ubah warna rating angka*/
+  }
+  
+  /* Gaya untuk harga dan tampilan seberangannya */
+  .price-info {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.rating {
-    font-size: 0.9rem;
-    color: #f1c40f;
-}
-
-.stars {
-    color: #f39c12;
-}
-
-.price {
-    font-size: 1rem;
+  }
+  
+  /* Gaya untuk nama author yang warnanya bisa diubah */
+  .course-author {
+    color: #e9a33f; /* Ubah warna sesuai kebutuhan */
     font-weight: bold;
-    color: #27ae60;
-}
-
-.course-button {
-    background-color: #1E3A8A;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.course-button:hover {
-    background-color: #2B7CD3;
-}
-
-/* foter */
+  }
+ /* Gaya untuk footer */
 footer {
     background-color: #1e3a8a;
     color: white;
-    padding: 20px;
+    padding: 40px 0;
     text-align: center;
-    margin-top: 5%;
-}
-
-.footer-container {
-    max-width: 1200px;
-    margin:  auto;
-}
-
-.footer-logo img {
-    width: 80px; 
-    margin-bottom: 20px;
-}
-
-.footer-social {
-    margin-bottom: 20px;
-}
-
-.footer-social a {
-    margin: 0 10px;
-    display: inline-block;
-}
-
-.footer-social img {
-    width: 30px;
-}
-
-.footer-bottom {
-    background-color: #0d1a56;
-    padding: 10px 20px;
-    font-size: 0.9rem;
-    color: #fff;
-}
-
-/* Responsive for Footer */
-@media (max-width: 768px) {
-    .footer-container {
-    flex-direction: column;
-    text-align: center;
-    }
-}
-
-.footer-section {
-padding: 0;
-    }
-
-
-/* ============= About Us ============= */
-
-.container-about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.about-title {
-    color: #1a4db4;
-    font-size: 36px;
-    margin-bottom: 25px;
-}
-
-.about-paragraph {
-    color: #333;
-    line-height: 1.6;
-    font-size: 14px;
-    margin-bottom: 10px;
-    text-align: justify;
-}
-
-/* .best-seller {
-    border: 2px solid #007bff;
-}
-
-.badge {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #007bff;
+  }
+  
+  /* Untuk ikon media sosial */
+  .social-icons a {
     color: white;
-    padding: 5px 10px;
-    border-radius: 0 0 5px 0;
-    font-size: 14px;
-    font-weight: bold;
-    -webkit-border-radius: 0 0 5px 0;
-    -moz-border-radius: 0 0 5px 0;
-    -ms-border-radius: 0 0 5px 0;
-    -o-border-radius: 0 0 5px 0;
-} */
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  /* Untuk garis pembatas */
+  .footer-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 20px;
+    padding-top: 20px;
+  }
