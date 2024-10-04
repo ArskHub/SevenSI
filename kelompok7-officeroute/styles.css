@@ -1,4 +1,3 @@
-/* Global Style */
 * {
   margin: 0;
   padding: 0;
@@ -12,20 +11,26 @@ body {
 
 /* Gaya untuk mengubah navbar */
 .navbar {
-  background-color: #1e3a8a; /* Warna background navbar */
-  padding: 20px 50px; /* Padding navbar */
+  background-color: #1e3a8a;
+  /* Warna background navbar */
+  padding: 20px 50px;
+  /* Padding navbar */
 }
 
 /* Gaya untuk mengubah logo */
 .navbar-brand img {
-  width: 80px; /* Lebar logo */
+  width: 80px;
+  /* Lebar logo */
 }
 
 /* Gaya untuk navmenu */
 .nav-link {
-  color: white !important; /* Warna teks navmenu */
-  font-weight: bold; /* Teks tebal */
-  margin: 0 15px; /* Jarak antar navmenu yang bisa diubah */
+  color: white !important;
+  /* Warna teks navmenu */
+  font-weight: bold;
+  /* Teks tebal */
+  margin: 0 15px;
+  /* Jarak antar navmenu yang bisa diubah */
 }
 
 /* Mengatur navmenu agar berada di tengah */
@@ -36,127 +41,188 @@ body {
 
 /* Gaya untuk tombol Sign In */
 .btn-signin {
-    background-color: white;
-    color: #1e3a8a;
-    border-radius: 8px;
-    padding: 10px 20px;
-    font-weight: bold;
-  }
-  
-  /* Gaya untuk tombol Sign Up */
-  .btn-signup {
-    background-color: transparent;
-    color: white;
-    border: 1px solid white;
-    border-radius: 8px;
-    padding: 10px 20px;
-    font-weight: bold;
-  }
-  
-  /* Hover untuk tombol Sign In menggunakan gaya tombol Sign Up */
-  .btn-signin:hover {
-    background-color: #206cbd; /* Warna latar belakang saat hover */
-    color: white; /* Warna teks saat hover */
-  }
-  
-  /* Hover untuk tombol Sign Up menggunakan gaya tombol Sign In */
-  .btn-signup:hover {
-    background-color: #206cbd; /* Warna latar belakang saat hover */
-    color: white; /* Warna teks saat hover */
-    
-  }
-  
+  background-color: white;
+  color: #1e3a8a;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+/* Gaya untuk tombol Sign Up */
+.btn-signup {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+/* Hover untuk tombol Sign In menggunakan gaya tombol Sign Up */
+.btn-signin:hover {
+  background-color: #206cbd;
+  /* Warna latar belakang saat hover */
+  color: white;
+  /* Warna teks saat hover */
+}
+
+/* Hover untuk tombol Sign Up menggunakan gaya tombol Sign In */
+.btn-signup:hover {
+  background-color: #206cbd;
+  /* Warna latar belakang saat hover */
+  color: white;
+  /* Warna teks saat hover */
+
+}
+
 
 /* Jarak antara tombol Sign In dan Sign Up */
 .btn-container {
   display: flex;
-  gap: 15px; /* Jarak antara kedua tombol yang bisa diubah */
+  gap: 15px;
+  /* Jarak antara kedua tombol yang bisa diubah */
 }
 
 /* Gaya untuk dropdown menu */
 .dropdown-menu {
-  background-color: #206cbd; /* Warna background dropdown */
+  background-color: #206cbd;
+  /* Warna background dropdown */
 }
 
 /* Gaya untuk item di dropdown */
 .dropdown-item {
-  color: white; /* Warna teks di dropdown */
+  color: white;
+  /* Warna teks di dropdown */
 }
 
 /* Gaya hover untuk item di dropdown */
 .dropdown-item:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* Efek hover */
+  background-color: rgba(255, 255, 255, 0.1);
+  /* Efek hover */
 }
 
 /* Gaya untuk grid container */
 .grid-container {
   margin-top: 50px;
-  margin-bottom: 50px; /* Tambahkan margin bawah untuk memberi jarak dengan footer */
+  margin-bottom: 50px;
+  /* Tambahkan margin bawah untuk memberi jarak dengan footer */
 }
-/* Gaya untuk judul Popular Courses */
-.text-center {
-  color: #1e3a8a; /* Ubah warna sesuai dengan card title */
-  font-weight: bold; /* Font weight bold */
-  margin-bottom: 30px; /* Jarak bawah dari judul */
+
+/* Bagian Hero */
+.hero {
+  padding: 30px;
+  /* mengatur jarak agar halaman jumbotron ada jarak dengan navbar */
 }
+
+.hero-text {
+  margin-right: 20px;
+  /* Menambahkan margin di sebelah kanan teks hero untuk memberikan jarak */
+}
+
+.hero-image img {
+  border-radius: 10px;
+  /* Menerapkan sudut melengkung pada gambar di bagian hero */
+  max-width: 100%;
+  /* Memastikan gambar mengambil 100% lebar kontainer */
+  height: auto;
+  /* Mempertahankan proporsi gambar */
+}
+
+/* Judul (Heading) */
+h1 {
+  font-weight: bold;
+  /* Membuat judul utama menjadi tebal */
+  color: #003399;
+  /* Mengatur warna biru untuk judul */
+}
+
+.service-card p {
+  font-size: 1.1rem;
+  /* Meningkatkan ukuran font sedikit untuk keterbacaan */
+  color: #5a5a5a;
+  /* Mengatur warna abu-abu medium untuk paragraf */
+}
+
+/* Pengaturan Kartu Layanan (Service Card) */
+.service-card {
+  border: 1px solid #e0e0e0;
+  /* Menambahkan batasan yang ringan di sekitar kartu layanan */
+  border-radius: 10px;
+  /* Membulatkan sudut-sudut kartu */
+  padding: 20px;
+  /* Menambahkan padding di dalam kartu */
+  transition: transform 0.3s ease;
+  /* Efek transisi saat hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Menambahkan bayangan halus pada kartu */
+}
+
+/* Efek Hover pada Kartu Layanan */
+.service-card:hover {
+  transform: translateY(-10px);
+  /* Menggerakkan kartu sedikit ke atas saat hover */
+}
+
+/* Pengaturan Ikon di Kartu Layanan */
+.service-icon {
+  width: 70px;
+  /* Mengatur ukuran ikon layanan agar seragam */
+  margin-bottom: 15px;
+  /* Menambahkan jarak di bawah ikon */
+}
+
+/* Judul untuk Bagian Layanan */
+h3 {
+  color: #073790;
+  /* Mengatur warna biru gelap untuk judul layanan */
+  font-weight: bold;
+  /* Membuat judul layanan menjadi tebal */
+}
+
+/* Bagian Layanan (Services) */
+.services {
+  padding-top: 40px;
+  /* Menambahkan padding di bagian atas section layanan */
+  padding-bottom: 40px;
+  /* Menambahkan padding di bagian bawah section layanan */
+}
+
+.services h2 {
+  font-weight: bold;
+  /* Membuat judul layanan menjadi tebal */
+  text-align: center;
+  /* Mengatur posisi judul agar berada di tengah */
+  color: #073790;
+  /* Mengatur warna biru gelap untuk judul */
+  margin-bottom: 40px;
+  /* Menambahkan jarak di bawah judul layanan */
+}
+
+/* Gaya untuk courses-section */
+
+.courses-section h2 {
+  color: #073790;
+  /* Mengatur warna biru gelap untuk judul */
+}
+
+
+.courses-section {
+  margin-bottom: 10rem;
+  /* Menambahkan jarak di bawah judul layanan */
+}
+
+.course-card{
+  width: 300px;
+}
+
 /* Gaya untuk card title */
 .card-title {
-  color: #1e3a8a; /* Ubah warna judul */
-  font-weight: bold; /* Tebalkan font untuk judul */
-  height: 3rem; /* Tinggi judul tetap agar button tidak bergeser */
-  overflow: hidden; /* Potong teks jika melebihi batas */
+  color: #1e3a8a;
+  /* Ubah warna judul */
 }
 
-/* Gaya untuk button di tengah */
-.btn-course {
-  display: block;
-  margin: 0 auto;
-  background-color: #1e3a8a;
-  color: white;
-  border-radius: 8px;
-  padding: 10px 20px;
-  text-align: center; /* Posisikan teks di tengah */
-  text-decoration: none;
-}
-
-/* Hover pada tombol beli */
-.btn-course:hover {
-  background-color: #2549a9;
-  cursor: pointer;
-}
-
-/* Gaya untuk card body dengan tinggi yang seragam */
-.card {
-  height: 100%; /* Pastikan tinggi card seragam */
-}
-
-.card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Agar button tetap di bawah */
-}
-
-/* Gaya untuk rating bintang */
-.star-rating {
-  color: #ffd700;
-}
-
-/* Gaya untuk rating angka*/
-.rating-number {
-  font-weight: bold;
-  color: #4a5568; /* Ubah warna rating angka*/
-}
-
-/* Gaya untuk harga dan tampilan seberangannya */
-.price-info {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* Gaya untuk nama author yang warnanya bisa diubah */
-.course-author {
-  color: #e9a33f; /* Ubah warna sesuai kebutuhan */
-  font-weight: bold;
+.btn-course{
+  background-color: #003399;
 }
 
 /* Gaya untuk footer */
@@ -165,6 +231,23 @@ footer {
   color: white;
   padding: 40px 0;
   text-align: center;
+}
+
+/* Untuk ikon media sosial */
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Untuk garis pembatas */
+.footer-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 20px;
+  padding-top: 20px;
+}
+=======
 }
 
 /* Untuk ikon media sosial */
@@ -213,7 +296,6 @@ footer {
 .footer-section {
 padding: 0;
     }
-
 
 /* ============= About Us ============= */
 
