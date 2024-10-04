@@ -9,6 +9,8 @@ body {
   background-color: #f9f9f9;
 }
 
+/*CSS untuk Navbar*/
+
 /* Gaya untuk mengubah navbar */
 .navbar {
   background-color: #1e3a8a;
@@ -134,11 +136,12 @@ body {
   margin-bottom: 50px;
   /* Tambahkan margin bawah untuk memberi jarak dengan footer */
 }
+/* End CSS Navbar */
 
 /* Bagian Hero */
 .hero {
   padding: 30px;
-  /* mengatur jarak agar halaman jumbotron ada jarak dengan navbar */
+  /* mengatur jarak agar halaman ada jarak dengan navbar */
 }
 
 .hero-text {
@@ -288,36 +291,41 @@ footer {
   margin-top: 20px;
   padding-top: 20px;
 }
+/* Bagian footer sosial untuk pengaturan margin bawah */
 .footer-social {
   margin-bottom: 20px;
 }
 
+/* Gaya untuk tautan media sosial dalam footer */
 .footer-social a {
   margin: 0 10px;
-  display: inline-block;
+  display: inline-block; 
 }
 
+/* Gaya untuk gambar ikon media sosial dalam footer */
 .footer-social img {
-  width: 30px;
+  width: 30px; 
 }
 
+/* Bagian bawah footer, termasuk warna latar belakang dan padding */
 .footer-bottom {
-  background-color: #0d1a56;
-  padding: 10px 20px;
-  font-size: 0.9rem;
-  color: #fff;
+  background-color: #0d1a56; 
+  padding: 10px 20px; 
+  font-size: 0.9rem; 
+  color: #fff; 
 }
 
-/* Responsive for Footer */
+/* Responsif untuk footer agar tata letak berubah pada perangkat dengan lebar maksimal 768px */
 @media (max-width: 768px) {
   .footer-container {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: column; /* Mengatur elemen footer agar tersusun secara vertikal */
+    text-align: center; /* Teks di footer diatur agar berada di tengah */
   }
 }
 
+/* Mengatur padding di bagian section footer */
 .footer-section {
-  padding: 0;
+  padding: 0; 
 }
 
 /* ============= About Us ============= */
@@ -357,11 +365,36 @@ footer {
   border-radius: 15px; /* Sudut melengkung untuk gambar */
 }
 
+/* Gaya untuk item dalam daftar grup */
+.list-group-item {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 15px; 
+  border: 1px solid #e0e0e0; 
+  margin-bottom: 10px;  
+  margin-top: 15px; 
+}
+
+/* Gaya untuk saat pointer di atas item daftar */
+.list-group-item:hover {
+  background-color: #a8b1bb;  
+  transition: background-color 0.3s; 
+}
+
+/* Gaya untuk elemen heading (h2) */
+h2 {
+  font-size: 2rem; 
+  font-weight: bold; 
+  margin-top: 220px; 
+}
+
+
 /* Tambahan responsif untuk mobile */
 @media (max-width: 768px) {
   .container-about {
-    flex-direction: column; /* Stack elemen secara vertikal untuk layar kecil */
-    text-align: center; /* Teks dan gambar akan di-align tengah */
+    flex-direction: column; 
+    text-align: center; 
   }
 
   .about-paragraph {
