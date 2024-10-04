@@ -1,398 +1,187 @@
 /* Global Style */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif ;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
 }
 
 body {
-    background-color: #f9f9f9;
+  background-color: #f9f9f9;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: #1E3A8A;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+/* Gaya untuk mengubah navbar */
+.navbar {
+  background-color: #1e3a8a; /* Warna background navbar */
+  padding: 20px 50px; /* Padding navbar */
 }
 
-.logo img {
-    width: 80px;
+/* Gaya untuk mengubah logo */
+.navbar-brand img {
+  width: 80px; /* Lebar logo */
 }
 
-nav ul {
-    display: flex;
-    list-style-type: none;
+/* Gaya untuk navmenu */
+.nav-link {
+  color: white !important; /* Warna teks navmenu */
+  font-weight: bold; /* Teks tebal */
+  margin: 0 15px; /* Jarak antar navmenu yang bisa diubah */
 }
 
-nav ul li {
-    margin: 0 15px;
+/* Mengatur navmenu agar berada di tengah */
+.navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.btn-container {
-    display: inline-block;
-}
-
-.btn-member {
+/* Gaya untuk tombol Sign In */
+.btn-signin {
     background-color: white;
-    color: #1E3A8A;
-    padding: 10px 20px;
+    color: #1e3a8a;
     border-radius: 8px;
-    margin-right: -15px;
-    text-decoration: none;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-}
-
-.btn-member1 {
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  
+  /* Gaya untuk tombol Sign Up */
+  .btn-signup {
     background-color: transparent;
     color: white;
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
     border: 1px solid white;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-}
-
-/* .btn-member:hover {
-    background-color: #1093dc;
-} */
-
-/* Hero Section */
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    background-color: white;
-    margin: 50px 0;
-}
-
-.hero-text {
-    max-width: 600px;
-}
-
-.hero-text h1 {
-    color: #1E3A8A;
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.hero-text p {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 20px;
-    line-height: 1.6;
-    text-align: justify;
-}
-
-.hero-text h3 {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: #1E3A8A;
-}
-
-.button-group {
-    display: flex;
-}
-
-.button-group .btn {
-    background-color: #1E3A8A;
-    color: white;
+    border-radius: 8px;
     padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-.button-group .btn:hover {
-    background-color: #1E3A8A;
-}
-
-/* Hero Image */
-.hero-image img {
-    max-width: 400px;
-    border-radius: 10px;
-}
-
-.container {
-    display: flex;
-    width: 100%;
-    height: 550px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 25px;
-   
-}
-
-.login-box {
-    display: flex;
-    width: 100%;
-}
-
-.login-form {
-    width: 50%;
-    padding: 40px;
-}
-
-h1 {
-    font-size: 12px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-h2 {
-    font-size: 24px;
-    margin-bottom: 5px;
-    color :#1E3A8A;
-    text-align: center;
-}
-
-p {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-label {
-    display: block;
-    color: #000;
-    margin-bottom: 5px;
-    font-size: 14px;
-}
-
-input[type="email"], input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-.password-container {
-    position: relative;
-}
-
-.forgot-password {
-    display: block;
-    color: #2B7CD3;
-    text-decoration: none;
-    font-size: 12px;
-    margin-bottom: 20px;
-}
-
-.btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #1E3A8A;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 10px;
-}
-
-.BuatAkun {
-    text-align: center;
-    font-size: 12px;
-}
-
-.BuatAkun a {
-    color: #1E3A8A;
-    text-decoration: none;
-}
-
-.social-login {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.social-login p {
-    font-size: 12px;
-}
-
-.social-icons a {
-    margin: 0 8px;
-    display: inline-block;
-}
-
-.social-icons img {
-    width: 30px;
-}
-
-.logo-box {
-    width: 50%;
-    background-color: #1E3A8A;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo-box img {
-    width: 200px;
-}
-/* services */
-.services .card.container {
-    display: flex;
-    justify-content: space-between; 
-    gap: 1rem; 
-    width: 100%;
-    height: 250px;
-  }
-  
-  .services .card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    width: 250px;
-    height: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0;
-  }
-  
-  .services .card .card-icon {
-    width: 50px;
-    height: auto;
-    margin-bottom: 0.5rem;
-  }
-/* services 2 */
-
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
-}
-
-h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: #1E3A8A;
-}
-
-.courses-section {
-    padding: 2rem;
-}
-
-.courses-container {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem; /* Jarak antar card */
-    flex-wrap: wrap;
-}
-
-.course-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 250px;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.course-image {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-}
-
-.course-content {
-    padding: 1rem;
-}
-
-.course-content h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    color: #1E3A8A;
-}
-
-.course-content p {
-    font-size: 0.9rem;
-    color: #7f8c8d;
-}
-
-.course-description {
-    margin-bottom: 1rem;
-}
-
-.rating-price {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.rating {
-    font-size: 0.9rem;
-    color: #f1c40f;
-}
-
-.stars {
-    color: #f39c12;
-}
-
-.price {
-    font-size: 1rem;
     font-weight: bold;
-    color: #27ae60;
+  }
+  
+  /* Hover untuk tombol Sign In menggunakan gaya tombol Sign Up */
+  .btn-signin:hover {
+    background-color: #206cbd; /* Warna latar belakang saat hover */
+    color: white; /* Warna teks saat hover */
+  }
+  
+  /* Hover untuk tombol Sign Up menggunakan gaya tombol Sign In */
+  .btn-signup:hover {
+    background-color: #206cbd; /* Warna latar belakang saat hover */
+    color: white; /* Warna teks saat hover */
+    
+  }
+  
+
+/* Jarak antara tombol Sign In dan Sign Up */
+.btn-container {
+  display: flex;
+  gap: 15px; /* Jarak antara kedua tombol yang bisa diubah */
 }
 
-.course-button {
-    background-color: #1E3A8A;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+/* Gaya untuk dropdown menu */
+.dropdown-menu {
+  background-color: #206cbd; /* Warna background dropdown */
 }
 
-.course-button:hover {
-    background-color: #2B7CD3;
+/* Gaya untuk item di dropdown */
+.dropdown-item {
+  color: white; /* Warna teks di dropdown */
 }
 
-/* foter */
+/* Gaya hover untuk item di dropdown */
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Efek hover */
+}
+
+/* Gaya untuk grid container */
+.grid-container {
+  margin-top: 50px;
+  margin-bottom: 50px; /* Tambahkan margin bawah untuk memberi jarak dengan footer */
+}
+/* Gaya untuk judul Popular Courses */
+.text-center {
+  color: #1e3a8a; /* Ubah warna sesuai dengan card title */
+  font-weight: bold; /* Font weight bold */
+  margin-bottom: 30px; /* Jarak bawah dari judul */
+}
+/* Gaya untuk card title */
+.card-title {
+  color: #1e3a8a; /* Ubah warna judul */
+  font-weight: bold; /* Tebalkan font untuk judul */
+  height: 3rem; /* Tinggi judul tetap agar button tidak bergeser */
+  overflow: hidden; /* Potong teks jika melebihi batas */
+}
+
+/* Gaya untuk button di tengah */
+.btn-course {
+  display: block;
+  margin: 0 auto;
+  background-color: #1e3a8a;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-align: center; /* Posisikan teks di tengah */
+  text-decoration: none;
+}
+
+/* Hover pada tombol beli */
+.btn-course:hover {
+  background-color: #2549a9;
+  cursor: pointer;
+}
+
+/* Gaya untuk card body dengan tinggi yang seragam */
+.card {
+  height: 100%; /* Pastikan tinggi card seragam */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Agar button tetap di bawah */
+}
+
+/* Gaya untuk rating bintang */
+.star-rating {
+  color: #ffd700;
+}
+
+/* Gaya untuk rating angka*/
+.rating-number {
+  font-weight: bold;
+  color: #4a5568; /* Ubah warna rating angka*/
+}
+
+/* Gaya untuk harga dan tampilan seberangannya */
+.price-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Gaya untuk nama author yang warnanya bisa diubah */
+.course-author {
+  color: #e9a33f; /* Ubah warna sesuai kebutuhan */
+  font-weight: bold;
+}
+
+/* Gaya untuk footer */
 footer {
-    background-color: #1e3a8a;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    margin-top: 5%;
+  background-color: #1e3a8a;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
 }
 
-.footer-container {
-    max-width: 1200px;
-    margin:  auto;
+/* Untuk ikon media sosial */
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
-.footer-logo img {
-    width: 80px; 
-    margin-bottom: 20px;
+/* Untuk garis pembatas */
+.footer-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 20px;
+  padding-top: 20px;
 }
-
+=======
 .footer-social {
     margin-bottom: 20px;
 }
@@ -474,92 +263,3 @@ padding: 0;
         text-align: center; /* Paragraf menjadi rata tengah di layar kecil */
     }
 }
-
-
-/* .best-seller {
-    border: 2px solid #007bff;
-}
-
-.badge {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #007bff;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 0 0 5px 0;
-    font-size: 14px;
-    font-weight: bold;
-    -webkit-border-radius: 0 0 5px 0;
-    -moz-border-radius: 0 0 5px 0;
-    -ms-border-radius: 0 0 5px 0;
-    -o-border-radius: 0 0 5px 0;
-} */
- .about-paragraph {
-    font-size: 1.1rem; 
-    line-height: 1.6;  
-    margin-bottom: 20px;  
-}
-
-/* Responsif */
-@media (max-width: 768px) {
-    .about-title {
-        font-size: 2rem; 
-    }
-}
-
-.container-about {
-    max-width: 1200px; 
-    margin: 0 auto; 
-    padding: 40px 20px; 
-}
-
-.box {
-    flex: 1; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-}
-
-.content {
-    flex: 2; 
-    padding: 20px; 
-    background-color: #f8f9fa; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-    text-align: center; 
-}
-
-.about-title {
-    font-size: 2.5rem; 
-    margin-bottom: 20px; 
-}
-
-.about-paragraph {
-    font-size: 1.1rem; 
-    line-height: 1.6; 
-    margin-bottom: 20px; 
-}
-
-.section-title {
-    font-size: 2rem; 
-    font-weight: bold; 
-    margin-bottom: 10px; 
-  }
-  
-  .list-group {
-    padding-top: 20px; 
-  }
-  
-  .list-group-item {
-    padding: 15px 20px; 
-    border: 1px solid #e0e0e0; 
-    margin-bottom: 10px; 
-    background-color: #f9f9f9;  
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .list-group-item:hover {
-    background-color: #e7f3fe; 
-  }
-  
