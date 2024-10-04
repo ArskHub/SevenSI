@@ -39,6 +39,35 @@ body {
   margin-right: auto;
 }
 
+/* Styling navbar links */
+.navbar-nav .nav-link {
+  font-weight: normal; /* Default weight for menu items */
+  color: #000;
+  transition: font-weight 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect to bold and change color */
+.navbar-nav .nav-link:hover {
+  font-weight: bold; /* Bold on hover */
+  color: #007bff; /* Change to blue on hover */
+}
+
+/* Make active menu items bold */
+.navbar-nav .nav-link.active {
+  font-weight: bold; /* Keep active link bold */
+  color: #007bff; /* Active color */
+}
+
+/* Custom button styling */
+.btn-signin,
+.btn-signup {
+  margin-left: 10px;
+  padding: 8px 15px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 /* Gaya untuk tombol Sign In */
 .btn-signin {
   background-color: white;
@@ -72,9 +101,7 @@ body {
   /* Warna latar belakang saat hover */
   color: white;
   /* Warna teks saat hover */
-
 }
-
 
 /* Jarak antara tombol Sign In dan Sign Up */
 .btn-container {
@@ -205,13 +232,12 @@ h3 {
   /* Mengatur warna biru gelap untuk judul */
 }
 
-
 .courses-section {
   margin-bottom: 10rem;
   /* Menambahkan jarak di bawah judul layanan */
 }
 
-.course-card{
+.course-card {
   width: 300px;
 }
 
@@ -221,7 +247,7 @@ h3 {
   /* Ubah warna judul */
 }
 
-.btn-course{
+.btn-course {
   background-color: #003399;
 }
 
@@ -247,8 +273,6 @@ footer {
   margin-top: 20px;
   padding-top: 20px;
 }
-=======
-}
 
 /* Untuk ikon media sosial */
 .social-icons a {
@@ -264,84 +288,181 @@ footer {
   margin-top: 20px;
   padding-top: 20px;
 }
-=======
 .footer-social {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .footer-social a {
-    margin: 0 10px;
-    display: inline-block;
+  margin: 0 10px;
+  display: inline-block;
 }
 
 .footer-social img {
-    width: 30px;
+  width: 30px;
 }
 
 .footer-bottom {
-    background-color: #0d1a56;
-    padding: 10px 20px;
-    font-size: 0.9rem;
-    color: #fff;
+  background-color: #0d1a56;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  color: #fff;
 }
 
 /* Responsive for Footer */
 @media (max-width: 768px) {
-    .footer-container {
+  .footer-container {
     flex-direction: column;
     text-align: center;
-    }
+  }
 }
 
 .footer-section {
-padding: 0;
-    }
+  padding: 0;
+}
 
 /* ============= About Us ============= */
 
 /* Container for the About Us section */
 .container-about {
-    display: flex;
-    flex-direction: row; /* Memastikan layout dalam bentuk baris */
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    flex-wrap: wrap; /* Membuat elemen bisa teratur ulang jika layar terlalu kecil */
+  display: flex;
+  flex-direction: row; /* Memastikan layout dalam bentuk baris */
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap; /* Membuat elemen bisa teratur ulang jika layar terlalu kecil */
 }
 
 /* Styling untuk judul About Us */
 .about-title {
-    color: #1a4db4;
-    font-size: 36px;
-    margin-bottom: 25px;
+  color: #1a4db4;
+  font-size: 36px;
+  margin-bottom: 25px;
 }
 
 /* Styling untuk paragraph About Us */
 .about-paragraph {
-    color: #333;
-    line-height: 1.6;
-    font-size: 14px;
-    margin-bottom: 10px;
-    text-align: justify;
-    max-width: 500px; /* Membatasi lebar teks agar tidak terlalu panjang */
+  color: #333;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: justify;
+  max-width: 500px; /* Membatasi lebar teks agar tidak terlalu panjang */
 }
 
 /* Styling untuk gambar About Us */
 .about-image img {
-    max-width: 100%; /* Membuat gambar responsif */
-    height: auto; /* Mempertahankan aspek rasio gambar */
-    border-radius: 15px; /* Sudut melengkung untuk gambar */
+  max-width: 100%; /* Membuat gambar responsif */
+  height: auto; /* Mempertahankan aspek rasio gambar */
+  border-radius: 15px; /* Sudut melengkung untuk gambar */
 }
 
 /* Tambahan responsif untuk mobile */
 @media (max-width: 768px) {
-    .container-about {
-        flex-direction: column; /* Stack elemen secara vertikal untuk layar kecil */
-        text-align: center; /* Teks dan gambar akan di-align tengah */
-    }
+  .container-about {
+    flex-direction: column; /* Stack elemen secara vertikal untuk layar kecil */
+    text-align: center; /* Teks dan gambar akan di-align tengah */
+  }
+
+  .about-paragraph {
+    text-align: center; /* Paragraf menjadi rata tengah di layar kecil */
+  }
+}
+
+
+/* login */
+body {
+    background-color: #f8f9fa; /* Light background color */
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-login {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+    margin-right: 20px; /* Add space between form and logo */
+}
+
+h1 {
+    font-weight: 700;
+    color: #1E3A8A;
+    text-align: left; /* Align heading to the left */
+}
+
+p {
+    color: #6c757d;
+    text-align: left; /* Align paragraph to the left */
+}
+
+.forgot-password {
+    display: block;
+    margin: 10px 0;
+    color: #2B7CD3;
+    text-align: right;
+}
+
+.btn-primary {
+    background-color: #1E3A8A; /* Bootstrap primary color */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #1E3A8A; /* Darker blue on hover */
+}
+
+.social-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.social-icon.google {
+    background-color: white; /* White background */
+    border: 2px solid #1E3A8A; /* Blue border */
+    color: #1E3A8A; /* Blue text */
+}
+
+.social-icon.facebook {
+    background-color: #1E3A8A; /* Facebook color */
     
-    .about-paragraph {
-        text-align: center; /* Paragraf menjadi rata tengah di layar kecil */
-    }
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+    color: #007bff;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E3A8A; /* Match with the form button */
+    border-radius: 0 15px 15px 0; /* Rounded corners on the right */
+}
+
+.logo-container img {
+    width: 250px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.row {
+    width: 100%; /* Ensure full width for the row */
 }

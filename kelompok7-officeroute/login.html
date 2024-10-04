@@ -1,65 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light background color */
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container-login {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            max-width: 450px;
+            width: 100%;
+            margin-right: 20px; /* Add space between form and logo */
+        }
+
+        h1 {
+            font-weight: 700;
+            color: #1E3A8A;
+            text-align: left; /* Align heading to the left */
+        }
+
+        p {
+            color: #6c757d;
+            text-align: left; /* Align paragraph to the left */
+        }
+
+        .forgot-password {
+            display: block;
+            margin: 10px 0;
+            color: #2B7CD3;
+            text-align: right;
+        }
+
+        .btn-primary {
+            background-color: #1E3A8A; /* Bootstrap primary color */
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #1E3A8A; /* Darker blue on hover */
+        }
+
+        .social-login {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            padding: 10px 15px;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .social-icon.google {
+            background-color: white; /* White background */
+            border: 2px solid #1E3A8A; /* Blue border */
+            color: #1E3A8A; /* Blue text */
+        }
+
+        .social-icon.facebook {
+            background-color: #1E3A8A; /* Facebook color */
+            
+        }
+
+        .social-icon:hover {
+            opacity: 0.8;
+            color: #007bff;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1E3A8A; /* Match with the form button */
+            border-radius: 0 15px 15px 0; /* Rounded corners on the right */
+        }
+
+        .logo-container img {
+            width: 250px; /* Adjust logo size */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .row {
+            width: 100%; /* Ensure full width for the row */
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-          <img src="images/LogoOR.png" alt="Logo" />
-        </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="course.html">Course</a></li>
-            <li><a href="Login.html" class="btn-member">Sign In</a></li>
-            <li><a href="#" class="btn-member1">Sign Up</a></li>
-          </ul>
-        </nav>
-      </header>
-
-    <div class="container">
-        <div class="login-box">
-            <div class="login-form">
-                <h1>Sign In</h1>
-                <h2>Welcome to Sign In</h2>
-                <p>Please fill in the below details to login to your account</p>
-                
-                <form>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter Email" required>
-
-                    <label for="password">Password</label>
-                    <div class="password-container">
-                        <input type="password" id="password" name="password" placeholder="Enter Password" required>
-                    </div>
-                    
-                    <a href="#" class="forgot-password">Forgot Password?</a>
-                    
-                    <button type="submit" class="btn">Sign In</button>
-                    
-                    <p class="BuatAkun">Don't have an account? <a href="#">Sign Up</a></p>
-
-                    <div class="social-login">
-                        <p>Also</p>
-                        <div class="social-icons">
-                            <a href="#"><img src="images/google.png" alt="Google"></a>
-                            <a href="#"><img src="images/fb.png" alt="Facebook"></a>
+    <div class="container-login">
+        <div class="row w-100">
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <div class="form-container">
+                    <h1>Welcome to Sign In</h1>
+                    <p>Please fill in the below details to login to your account</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
                         </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter Password" required>
+                        </div>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                        <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                    </form>
+                    <p>Don't have an account? <a href="#">Sign Up</a></p>
+                    <div class="social-login">
+                        <a href="https://www.google.com" target="_blank" class="social-icon google">
+                            <i class="bi bi-google"></i> Google
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank" class="social-icon facebook">
+                            <i class="bi bi-facebook"></i> Facebook
+                        </a>
                     </div>
-                </form>
-            </div>
-
-            <div class="logo-box">
-                <div class="logo">
-                    <img src="images/LogoOR.png" alt="OfficeRoute Logo">
                 </div>
+            </div>
+            <div class="col-md-6 logo-container">
+                <img src="images/about.png" alt="Office Route Logo" />
             </div>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
