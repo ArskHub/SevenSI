@@ -247,3 +247,101 @@ footer {
   margin-top: 20px;
   padding-top: 20px;
 }
+=======
+}
+
+/* Untuk ikon media sosial */
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Untuk garis pembatas */
+.footer-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 20px;
+  padding-top: 20px;
+}
+=======
+.footer-social {
+    margin-bottom: 20px;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-social img {
+    width: 30px;
+}
+
+.footer-bottom {
+    background-color: #0d1a56;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+/* Responsive for Footer */
+@media (max-width: 768px) {
+    .footer-container {
+    flex-direction: column;
+    text-align: center;
+    }
+}
+
+.footer-section {
+padding: 0;
+    }
+
+/* ============= About Us ============= */
+
+/* Container for the About Us section */
+.container-about {
+    display: flex;
+    flex-direction: row; /* Memastikan layout dalam bentuk baris */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; /* Membuat elemen bisa teratur ulang jika layar terlalu kecil */
+}
+
+/* Styling untuk judul About Us */
+.about-title {
+    color: #1a4db4;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+/* Styling untuk paragraph About Us */
+.about-paragraph {
+    color: #333;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: justify;
+    max-width: 500px; /* Membatasi lebar teks agar tidak terlalu panjang */
+}
+
+/* Styling untuk gambar About Us */
+.about-image img {
+    max-width: 100%; /* Membuat gambar responsif */
+    height: auto; /* Mempertahankan aspek rasio gambar */
+    border-radius: 15px; /* Sudut melengkung untuk gambar */
+}
+
+/* Tambahan responsif untuk mobile */
+@media (max-width: 768px) {
+    .container-about {
+        flex-direction: column; /* Stack elemen secara vertikal untuk layar kecil */
+        text-align: center; /* Teks dan gambar akan di-align tengah */
+    }
+    
+    .about-paragraph {
+        text-align: center; /* Paragraf menjadi rata tengah di layar kecil */
+    }
+}
