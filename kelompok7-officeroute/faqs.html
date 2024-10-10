@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Office Route | FAQs</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <!-- Bagian logo -->
+          <a class="navbar-brand" href="#"
+            ><img src="images/LogoOR.png" alt="Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Bagian navmenu -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <!-- Urutan menu yang benar: Home, Courses, About Us -->
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Courses
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="all-courses.html"
+                      >All Courses</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">Ms. Word Course</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Ms. Excel Course</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Ms. Powerpoint Course</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faqs.html">FAQs</a>
+              </li>
+            </ul>
+            <!-- Bagian tombol Sign In dan Sign Up -->
+            <div class="btn-container">
+              <a class="btn btn-signin" href="login.html">Sign In</a>
+              <a class="btn btn-signup" href="#">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Navbar -->
+
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h1 class="text-center mb-4">FAQs</h1>
+          <div class="accordion" id="faqAccordion">
+            <!-- FAQs Item 1-->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  What is Office Route?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Office Route is an online learning platform offering courses
+                  in Microsoft Office, such as Word, PowerPoint, and Excel. We
+                  provide learning at various levels, from beginner to advanced,
+                  with a focus on practical skills that can be applied in the
+                  workplace.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQs Item 2-->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="true"
+                  aria-controls="collapseTwo"
+                >
+                  Are the courses on Office Route suitable for beginners?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Yes! The courses on Office Route are designed for all learning
+                  levels, including beginners. If you are new to Microsoft
+                  Office, you can start with the Beginner level course and then
+                  progress to Intermediate or Advanced levels.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQs Item 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="true"
+                  aria-controls="collapseThree"
+                >
+                  Do I receive a certificate after completing a course?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingThree"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Yes, upon successfully completing any course, you will receive
+                  a completion certificate from Office Route, which you can add
+                  to your professional profile on LinkedIn or use when applying
+                  for jobs.
+                </div>
+              </div>
+            </div>
+            <!--  FAQs Item 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="true"
+                  aria-controls="collapseFour"
+                >
+                  How do I access the courses on Office Route?
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingFour"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  You can access courses on Office Route through our website or
+                  mobile app. Simply create an account, select the course you
+                  want, and start learning anytime, anywhere.
+                </div>
+              </div>
+            </div>
+            <!--  FAQs Item 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="true"
+                  aria-controls="collapseFive"
+                >
+                  Does Office Route provide support after course completion?
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingFive"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Yes, we offer post-course support through discussion forums,
+                  webinars, and access to instructors if you have any further
+                  questions. You can also join the Office Route community to
+                  continue learning and growing together.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+      <!-- Logo di tengah -->
+      <div class="logo mb-3">
+        <img src="images/LogoOR.png" alt="Logo" width="100" />
+      </div>
+
+      <!-- Icon media sosial dengan link -->
+      <div class="social-icons mb-3">
+        <a href="https://www.facebook.com" target="_blank"
+          ><i class="bi bi-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com" target="_blank"
+          ><i class="bi bi-instagram"></i
+        ></a>
+        <a href="https://www.twitter.com" target="_blank"
+          ><i class="bi bi-twitter"></i
+        ></a>
+        <a href="https://www.linkedin.com" target="_blank"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+      </div>
+
+      <!-- Garis pembatas -->
+      <div class="footer-divider"></div>
+
+      <!-- Tulisan copyright -->
+      <p class="mt-3 text-white text-lg-center">
+        © 2024 Office Route. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
