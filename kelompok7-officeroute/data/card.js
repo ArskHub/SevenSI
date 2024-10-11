@@ -56,13 +56,13 @@ export const allCourseCardData = [
         image: "images/ppt.jpg",
         title: "Learn Microsoft Office PowerPoint (Beginner)",
         instructor: "John Doe",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        description: "Master the skills to excel at Microsoft PowerPoint.",
         rating: 5.0,
         price: "Rp. 999.999"
     },
     {
         image: "images/excel.jpg",
-        title: "Learn Microsoft Excel (Intermediate)",
+        title: "Learn Microsoft Office Excel (Intermediate)",
         instructor: "Jane Smith",
         description: "Master the skills to excel at Microsoft Excel.",
         rating: 4.8,
@@ -70,7 +70,7 @@ export const allCourseCardData = [
     },
     {
         image: "images/word.jpg",
-        title: "Learn Microsoft Word (Advanced)",
+        title: "Learn Microsoft Office Word (Advanced)",
         instructor: "Alice Johnson",
         description: "Advanced Microsoft Word tips and tricks.",
         rating: 4.9,
@@ -80,13 +80,13 @@ export const allCourseCardData = [
         image: "images/ppt.jpg",
         title: "Learn Microsoft Office PowerPoint (Beginner)",
         instructor: "John Doe",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        description: "Master the skills to excel at Microsoft PowerPoint.",
         rating: 5.0,
         price: "Rp. 999.999"
     },
     {
         image: "images/excel.jpg",
-        title: "Learn Microsoft Excel (Intermediate)",
+        title: "Learn Microsoft Office Excel (Intermediate)",
         instructor: "Jane Smith",
         description: "Master the skills to excel at Microsoft Excel.",
         rating: 4.8,
@@ -94,7 +94,7 @@ export const allCourseCardData = [
     },
     {
         image: "images/word.jpg",
-        title: "Learn Microsoft Word (Advanced)",
+        title: "Learn Microsoft Office Word (Advanced)",
         instructor: "Alice Johnson",
         description: "Advanced Microsoft Word tips and tricks.",
         rating: 4.9,

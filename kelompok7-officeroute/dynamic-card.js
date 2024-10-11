@@ -20,7 +20,7 @@ const courseCard = (course) => {
                             </div>
                         </div>
                         <div class="d-grid col-6 mx-auto">
-                            <a href="#" class="btn btn-course py-2 text-white mt-3">Buy Now</a>
+                            <a href="#" class="btn btn-primary py-2 text-white mt-3">Buy Now</a>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@ const allCoursesCard = (data) => {
                 </div>
               </div>
               <div class="d-grid col-6 mx-auto">
-                <a href="#" class="btn btn-course py-2 text-white mt-3">Beli Course Sekarang</a>
+                <a href="#" class="btn btn-primary py-2 text-white mt-3">Beli Course Sekarang</a>
               </div>
             </div>
           </div>
