@@ -105,6 +105,18 @@ body {
   /* Warna teks saat hover */
 }
 
+.form-group {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 70%;
+  right: 15px;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+}
+
 /* Jarak antara tombol Sign In dan Sign Up */
 .btn-container {
   display: flex;

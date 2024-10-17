@@ -82,7 +82,7 @@
                 <div class="form-container-signup">
                     <h1>Welcome to Sign Up</h1>
                     <p>Create An Account</p>
-                    <form>
+                    <form id="SignupForm">
                         <div class="form-group">
                             <label for="name">Full Name</label>
                             <input type="name" class="form-control" id="name" placeholder="Enter Name" required>
@@ -94,6 +94,7 @@
                         <div class="form-group">
                             <label for="password">Password</label>
                             <input type="password" class="form-control" id="password" placeholder="Enter Password" required>
+                        <i class="bi bi-eye eye-icon" id="togglePassword"></i>
                         </div>
                         <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
                     </form>
@@ -110,6 +111,24 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <script>
+      $(document).ready(function () {
+        // submit form dg jquery
+        $("#SignupForm").submit(function (event) {
+          event.preventDefault();
+          var name = $("#name").val();
+          var email = $("#email").val();
+          var password = $("#password").val();
+
+          // validasi
+          if (name === "" || email === "" || password === "") {
+            alert("Please fill in all fields.");
+          } else {
+            alert("Form submitted successfully!");
+          }
+        });
+      });
+    </script>
     <!-- Footer section -->
     <footer>
         <!-- Logo di tengah -->
