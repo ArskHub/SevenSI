@@ -477,6 +477,18 @@ p {
   align-items: center;
 }
 
+.password-container {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 70%;
+  right: 15px;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+}
+
 .social-icon.google {
   background-color: white; /* White background */
   border: 2px solid #1e3a8a; /* Blue border */
