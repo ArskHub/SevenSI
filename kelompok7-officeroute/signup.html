@@ -111,24 +111,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script>
-      $(document).ready(function () {
-        // submit form dg jquery
-        $("#SignupForm").submit(function (event) {
-          event.preventDefault();
-          var name = $("#name").val();
-          var email = $("#email").val();
-          var password = $("#password").val();
-
-          // validasi
-          if (name === "" || email === "" || password === "") {
-            alert("Please fill in all fields.");
-          } else {
-            alert("Form submitted successfully!");
-          }
-        });
-      });
-    </script>
     <!-- Footer section -->
     <footer>
         <!-- Logo di tengah -->

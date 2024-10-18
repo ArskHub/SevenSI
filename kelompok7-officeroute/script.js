@@ -1,3 +1,4 @@
+// === JQuery Audio Sign In === //
 $(document).ready(function() {
   // Ambil elemen tombol Sign In di Navbar dan audio Sign In di Navbar
   const navbarSigninButton = $(".btn-signin");
@@ -26,6 +27,7 @@ $(document).ready(function() {
   });
 });
 
+// === JQuery FAQs === //
 $(document).ready(function () {
   // Memilih semua tombol accordion dengan kelas '.accordion-button'
   var accordionButtons = $(".accordion-button");
@@ -52,6 +54,7 @@ $(document).ready(function () {
   });
 });
 
+// === JQuery Back to Top === //
 $(document).ready(function () {
   // Mengecek posisi scroll saat halaman di-refresh
   if ($(this).scrollTop() < 200) {
@@ -74,4 +77,56 @@ $(document).ready(function () {
     $("html, body").animate({ scrollTop: 0 }, 150); // Scroll cepat dalam 150ms
     return false; // Mencegah aksi default
   });
+});
+
+// === JQuery Validasi Login === //
+$(document).ready(function () {
+  // submit form dg jquery
+  $("#loginForm").submit(function (event) {
+    event.preventDefault();
+    var email = $("#email").val();
+    var password = $("#password").val();
+
+    // validasi
+    if (email === "" || password === "") {
+      alert("Please fill in all fields.");
+    } else {
+      alert("Form submitted successfully! Redirecting to homepage...");
+      window.location.href = "index.html";
+    }
+  });
+});
+
+// === JQuery Validasi Sign Up === //
+$(document).ready(function () {
+  // submit form dg jquery
+  $("#SignupForm").submit(function (event) {
+    event.preventDefault();
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var password = $("#password").val();
+
+    // validasi
+    if (name === "" || email === "" || password === "") {
+      alert("Please fill in all fields.");
+    } else {
+      alert("Form submitted successfully! Redirecting to login...");
+      window.location.href = "login.html";
+    }
+  });
+});
+
+// === JQuery Eye cek Password === //
+$("#togglePassword").click(function () {
+var passwordField = $("#password");
+var passwordFieldType = passwordField.attr("type");
+
+// Jika tipe input password, ubah menjadi teks
+if (passwordFieldType === "password") {
+  passwordField.attr("type", "text");
+  $(this).removeClass("bi-eye").addClass("bi-eye-slash"); // Ganti ikon menjadi "mata tertutup"
+} else {
+  passwordField.attr("type", "password");
+  $(this).removeClass("bi-eye-slash").addClass("bi-eye"); // Ganti ikon kembali menjadi "mata terbuka"
+}
 });
