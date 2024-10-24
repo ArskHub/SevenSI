@@ -151,24 +151,43 @@ body {
 /* End CSS Navbar */
 
 /* Bagian Hero */
+
 .hero {
-  padding: 30px;
-  /* mengatur jarak agar halaman ada jarak dengan navbar */
+  background-image: url('images/Istock.png'); /* Make sure the path is correct */
+  background-size: cover; /* Make the background image cover the entire section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  height: 500px; /* Adjust the height as needed */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  padding: 20px; /* Add padding for spacing */
+  color: #fff; /* Make text white for visibility */
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text readability */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 50%; /* Make the text content take up half the width */
 }
 
 .hero-text {
-  margin-right: 20px;
-  /* Menambahkan margin di sebelah kanan teks hero untuk memberikan jarak */
+  text-align: left; /* Align the text to the left */
+  
+}
+.hero-text h1, 
+.hero-text p {
+  color: #ffffff; /* Sets the text color to white */
+
 }
 
-.hero-image img {
-  border-radius: 10px;
-  /* Menerapkan sudut melengkung pada gambar di bagian hero */
-  max-width: 100%;
-  /* Memastikan gambar mengambil 100% lebar kontainer */
-  height: auto;
-  /* Mempertahankan proporsi gambar */
+@media (max-width: 768px) {
+  .hero-content {
+    max-width: 100%; /* Full width on smaller screens */
+  }
 }
+
+
 
 /* Judul (Heading) */
 h1 {
@@ -361,7 +380,7 @@ footer {
 
 /* Styling untuk judul About Us */
 .about-title {
-  color: #1a4db4;
+  color: #1E3A8A;
   font-size: 36px;
   margin-bottom: 25px;
 }
@@ -418,6 +437,90 @@ h2 {
     text-align: center; /* Paragraf menjadi rata tengah di layar kecil */
   }
 }
+
+/* Office Route Achievements */
+.achievement-card {
+  border-radius: 10px; /* Menambahkan sudut melingkar pada card */
+  background-color: #ffffff; /* Mengatur warna latar belakang card menjadi putih */
+  width: 300px; /* Mengatur lebar card menjadi 300 piksel */
+  transition: transform 0.3s ease; /* Menambahkan efek transisi pada perubahan transformasi */
+}
+
+.card-left {
+  transform: translateY(-20px); /* Mengangkat card kiri sejauh 20 piksel ke atas */
+}
+
+.card-right {
+  transform: translateY(-20px); /* Mengangkat card kanan sejauh 20 piksel ke atas */
+}
+
+.card-center {
+  transform: translateY(10px); /* Menurunkan card tengah sejauh 10 piksel ke bawah */
+}
+
+.achievement-card:hover {
+  transform: translateY(-10px); /* Mengangkat card saat kursor diarahkan ke atasnya */
+}
+
+.achievement-card img {
+  display: block; /* Mengatur gambar agar ditampilkan sebagai blok */
+  margin: 0 auto; /* Mengatur margin otomatis agar gambar terpusat */
+}
+
+h3 {
+  color: #1E3A8A; /* Mengatur warna teks untuk judul menjadi biru gelap */
+  font-weight: bold; /* Mengatur ketebalan font untuk judul menjadi bold */
+}
+
+p {
+  color: #666; /* Mengatur warna teks untuk paragraf menjadi abu-abu */
+  font-size: 0.95rem; /* Mengatur ukuran font untuk paragraf */
+}
+
+
+/* Our Partnership */
+.container {
+  margin: auto;
+  text-align: center;
+}
+
+.partnership-slider {
+  display: flex;
+  flex-direction: column; /* Stack rows vertically */
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.partnership-content {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of items to next line */
+  transition: transform 1s ease-in-out; /* Set animation speed */
+}
+
+.partnership-row {
+  display: flex; /* Horizontal layout for rows */
+  width: 100%; /* Set to 100% for full width */
+}
+
+.partnership-item {
+  flex: 0 0 16.66%; /* Set each item to occupy 1/6 of the row (100% / 6) */
+  padding: 20px;
+  margin: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query to adjust layout on smaller screens */
+@media (max-width: 600px) {
+  .partnership-item {
+      flex: 1 0 100%; /* Each item takes full width on smaller screens */
+  }
+}
+
+
 
 /*Sign Up*/
 
