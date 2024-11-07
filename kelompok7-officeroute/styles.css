@@ -402,6 +402,63 @@ footer {
   border-radius: 15px; /* Sudut melengkung untuk gambar */
 }
 
+
+
+.container-about {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.box {
+  margin-right: 20px;
+}
+
+.logo {
+  max-width: 100%;
+  width: 250px;
+  height: auto;
+}
+
+.content {
+  max-width: 600px;
+}
+
+.about-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-paragraph {
+  background-color: #f8f9fa; /* Warna latar belakang kotak */
+  padding: 20px;
+  border-radius: 8px; /* Membuat sudut kotak menjadi bulat */
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+}
+
+@media (max-width: 768px) {
+  /* Membuat layout responsif pada layar kecil */
+  .container-about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .box {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  .about-paragraph {
+    font-size: 1rem;
+  }
+}
+
+
 /* Gaya untuk item dalam daftar grup */
 .list-group-item {
   display: flex;
