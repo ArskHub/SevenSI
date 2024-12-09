@@ -933,6 +933,7 @@ table.table tbody td ul {
   width: 100%; 
   border-collapse: collapse; 
   background-color: #1E3A8A; 
+  border: 1px solid #1E3A8A;
 }
 
 .table th,
@@ -973,5 +974,5 @@ table.table tbody td ul {
 }
 
 .btn-custom:hover {
-  background-color: #2F88FF; /* Biru lebih cerah */
+  background-color: #2F88FF; 
 }
