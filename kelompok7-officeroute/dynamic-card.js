@@ -1,4 +1,4 @@
-import { courseCardData, servicesData, allCourseCardData } from "./data/card.js";
+import { courseCardData, servicesData, allCourseCardData, msWordCourseData } from "./data/card.js";
 
 const courseCard = (course) => {
   return `
@@ -82,6 +82,7 @@ const generateCard = (data, card, container) => {
 const cardContainer = $('.courses-container');
 const servicesContainer = $('.services-container');
 const allCoursesContainer = $('.all-courses-container');
+const msWordCoursesContainer = $('.ms-word-courses-container');
 
 if (cardContainer.length) {
   generateCard(courseCardData, courseCard, cardContainer);
@@ -91,4 +92,7 @@ if (servicesContainer.length) {
 }
 if (allCoursesContainer.length) {
   generateCard(allCourseCardData, allCoursesCard, allCoursesContainer);
+}
+if (msWordCoursesContainer.length) {
+  generateCard(msWordCourseData, courseCard, msWordCoursesContainer);
 }
