@@ -776,3 +776,202 @@ p {
     height: 250px; 
   }
 }
+
+/* buat halaman word course */
+.course-header.word-course {
+  background: url('images/bg-msword.png') no-repeat center center;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+}
+
+/* buat halaman excel course */
+.course-header.excel-course {
+  background: url('images/bg-msword.png') no-repeat center center;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+}
+
+/* buat halaman ppt course */
+.course-header.ppt-course {
+  background: url('images/bg-msword.png') no-repeat center center;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+}
+
+.course-header img {
+  max-width: 250px;
+  margin: 20px auto;
+}
+
+.description-box {
+  background: rgba(255, 255, 255, 0.9); 
+  border-radius: 10px; 
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  color: #333; 
+}
+
+.description-box p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.course-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.course-header {
+  background: url('images/bg-allcourse.png') no-repeat center center;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+}
+
+/* Mengatur link card agar tetap tidak mempengaruhi layout */
+.card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-link:hover .card {
+  transform: scale(1.02); /* Efek zoom kecil saat hover */
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan */
+}
+
+.card {
+  height: 100%; /* Pertahankan tinggi card */
+}
+
+/* ni yg di course word */
+.course-container {
+  display: flex;
+  gap: 20px; /* Jarak antara course dan mentor */
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.course-details {
+  flex: 2; 
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.mentor-section {
+  flex: 1; 
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.mentor-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #1E3A8A;
+}
+
+.mentor-card {
+  text-align: center;
+}
+
+.mentor-image {
+  border-radius: 5px;
+  width: 320px;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+.mentor-info {
+  text-align: left; 
+}
+
+.mentor-name {
+  text-align: center; 
+  margin-bottom: 10px; 
+  color: #1E3A8A;
+}
+
+/* tabel di course (topik pembelajaran) */
+table.table tbody td ul {
+  text-align: left; 
+  padding-left: 20px; 
+  margin: 0; 
+  list-style-type: disc; 
+}
+
+.table {
+  width: 100%; 
+  border-collapse: collapse; 
+  background-color: #1E3A8A; 
+}
+
+.table th,
+.table td {
+  text-align: center; 
+  vertical-align: middle; 
+  padding: 10px; 
+}
+
+.table th {
+  background-color: #1E3A8A; 
+  color: white; 
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #e0e7ff; 
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #cfe2ff; 
+}
+
+.table tbody td:first-child {
+  text-align: left;
+}
+
+.table tbody tr:hover {
+  background-color: #007bff;
+  color: white; 
+}
+
+
+.btn-custom {
+  background-color: #1E3A8A;
+  color: #ffffff;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-custom:hover {
+  background-color: #2F88FF; /* Biru lebih cerah */
+}
